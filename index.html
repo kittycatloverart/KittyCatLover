@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Image</title>
+    <title>Centered Image with Button</title>
     <style>
         body {
             margin: 0;
@@ -14,15 +14,39 @@
             background-color: #f9f9f9;
         }
 
+        .container {
+            text-align: center;
+        }
+
         img {
             max-width: 90%;
             height: auto;
-            border: 2px solid #ccc;
-            border-radius: 8px;
+            border-radius: 8px; /* Optional rounded corners */
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #4CAF50; /* green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <img src="IMG_1546.png" alt="Centered Image">
+    <div class="container">
+        <img src="IMG_1546.png" alt="Centered Image">
+        <br>
+        <button onclick="window.location.href='https://kittycatlover.bigcartel.com/products'">
+            Shop Products
+        </button>
+    </div>
 </body>
 </html>
