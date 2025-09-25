@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Image</title>
+    <title>KITTYCATLOVER</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-image: url("IMG_1559.jpeg");
-            background-size: cover;      /* Makes the image cover the entire screen */
-            background-position: center; /* Keeps it centered */
-            background-repeat: no-repeat;/* Prevents tiling */
-            font-family: Arial, sans-serif;
+            background-size: cover;       /* Fill screen */
+            background-position: center;  /* Keep centered */
+            background-repeat: no-repeat; /* No tiling */
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+            text-align: center;
         }
 
-        .button {
-            padding: 12px 24px;
-            margin: 10px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            background-color: #419af7;
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px; /* Optional rounded corners */
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #4CAF50; /* green */
             color: white;
+            padding: 10px 20px;
+            border: none;
             cursor: pointer;
-            transition: background 0.3s ease;
+            font-size: 16px;
+            border-radius: 5px;
         }
 
-        .button:hover {
-            background-color: #2f78c2;
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
+        <img src="IMG_1546.png" alt="Centered Image">
+        <br>
+        <button onclick="window.location.href='https://kittycatlover.bigcartel.com/products'">
+            Shop Products
+        </button>
     </div>
 </body>
 </html>
